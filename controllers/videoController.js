@@ -14,10 +14,10 @@ export const search = (req, res) => {
   const {
     query: { term: searchingBy }
   } = req;
-  res.render("Search", { pageTitle: "Search", searchingBy, videos });
+  res.render("search", { pageTitle: "Search", searchingBy, videos });
 };
 export const getUpload = (req, res) =>
-  res.render("Upload", { pageTitle: "Upload" });
+  res.render("upload", { pageTitle: "Upload" });
 export const postUpload = async (req, res) => {
   const {
     body: { title, description },
@@ -33,8 +33,8 @@ export const postUpload = async (req, res) => {
 };
 
 export const videoDetail = (req, res) =>
-  res.render("Video Detail", { pageTitle: "Video Detail" });
+  res.render("videoDetail", { pageTitle: "Video Detail" });
 export const editVideo = (req, res) =>
-  res.render("Edit Video", { pageTitle: "Edit Video" });
+  res.render("editVideo", { pageTitle: "Edit Video" });
 export const deleteVideo = (req, res) =>
-  res.render("Delete Video", { pageTitle: "Delete Video" });
+  res.render("deleteVideo", { pageTitle: "Delete Video" });
