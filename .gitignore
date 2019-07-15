@@ -84,5 +84,4 @@ typings/
 # FuseBox cache
 .fusebox/
 package-lock.json
-
-node_modules
+uploads
