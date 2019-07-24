@@ -8,6 +8,7 @@
   "description": "Cloning Youtube with Vanilla and NodeJS",
   "author": "Museop Kim",
   "dependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/polyfill": "^7.4.4",
@@ -53,7 +54,6 @@
     "prestart": "npm run build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
