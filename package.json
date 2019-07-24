@@ -39,13 +39,7 @@
     "pug": "^2.0.4",
     "sass-loader": "^7.1.0",
     "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "nodemon": "^1.19.1",
-    "prettier": "^1.18.2"
+    "webpack-cli": "^3.3.5"
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/init.js --delay 2 --ignore '.scss' --ignore 'static'",
@@ -58,5 +52,13 @@
     "tunnel": "ngrok http 4000",
     "start": "PRODUCTION=true node build/init.js",
     "prestart": "npm run build"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
   }
 }
